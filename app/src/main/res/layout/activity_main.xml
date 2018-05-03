@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    tools:context="com.example.android.quidditch.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Gryffindor"
+                android:background="#eb0000"
+                android:textSize= "35sp"
+                android:textColor="#ffcd00"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="75sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"
+                android:id="@+id/team_a_score"/>
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textSize="25sp"
+                android:padding="25dp"
+                android:onClick="addTenTeamA"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snitch"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:onClick="snitchTeamA"/>
+
+            <ImageView
+                android:src="@drawable/onebroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Slytherin"
+                android:background="#154C07"
+                android:textSize="35sp"
+                android:textColor="#aaaaaa"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="75sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"
+                android:id="@+id/team_b_score"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textSize="25sp"
+                android:padding="25dp"
+                android:onClick="addTenTeamB"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snitch"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:onClick="snitchTeamB"/>
+
+
+            <ImageView
+                android:src="@drawable/twobrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Reset"
+        android:onClick="resetCounter"/>
+
+</RelativeLayout>
