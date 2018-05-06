@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="teamSize">35sp</dimen>
+    <dimen name="scoreSize">75sp</dimen>
+    <dimen name="scoreTextSize">25sp</dimen>
+    <dimen name="teamTop">5dp</dimen>
+    <dimen name="teamBottom">8dp</dimen>
+    <dimen name="scoreBottom">10dp</dimen>
+    <dimen name="buttonPad">25dp</dimen>
+    <dimen name="buttonMarg">50dp</dimen>
+
+</resources>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Quidditch</string>
+    <string name="TeamA">Gryffindor</string>
+    <string name="TeamB">Syltherin</string>
+    <string name="Score">Score</string>
+    <string name="Snitch">Snitch</string>
+    <string name="Reset">Reset</string>
 </resources>
